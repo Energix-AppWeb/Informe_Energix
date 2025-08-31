@@ -6,9 +6,9 @@
 
 <h4 align="center"><strong>Ingeniería de Software</strong></h4>
 <h4 align="center"><strong>Aplicaciones Web - 7470</strong></h4>
-<h4 align="center"><strong>Docente: Alex Humberto Sánchez Ponce</h4>
-<h4 align="center"><strong>Startup: BuildWise</strong></h4>
-<h4 align="center">Product: BuildTruck</strong></h4>
+<h4 align="center"><strong>Docente: Rafael Oswaldo Castro Veramendi</h4>
+<h4 align="center"><strong>Startup: PanPun</strong></h4>
+<h4 align="center">Product: Energix</strong></h4>
 
 <p align="center"><strong>Team members:</strong></p>
 
@@ -23,21 +23,21 @@
     <td style="border: 1px solid black; padding: 8px; text-align: center;">U202323479</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Daniela Araceli Gómez Flores</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">U202311184</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Cotrina Siclla, Sofia Alessandra</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">U20231b120</td>
   </tr>
   </tr>
     <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Maylhy Olinda Gutierrez Condo</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">U202311220</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Encalada Salazar, Alexis</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">U20211g491</td>
   </tr>  
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Raúl Bellido Salas</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">U202310931</td>  
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Goñe Araccata, Esther Abigail</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">U202318049</td>  
   </tr>
     <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Sandra Paula Luyo Correa</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">U202314513</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Salazar Caballero, Alvaro Fabrizzio</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">U202321941</td>
   </tr>
 </table>
 
