@@ -5,7 +5,7 @@
 <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Descripción de la imagen" style="width: 50%; height: auto;"></p>
 
 <h4 align="center"><strong>Ingeniería de Software</strong></h4>
-<h4 align="center"><strong>Aplicaciones Web - 4388</strong></h4>
+<h4 align="center"><strong>Aplicaciones Web - 7470</strong></h4>
 <h4 align="center"><strong>Docente: Alex Humberto Sánchez Ponce</h4>
 <h4 align="center"><strong>Startup: BuildWise</strong></h4>
 <h4 align="center">Product: BuildTruck</strong></h4>
@@ -19,8 +19,8 @@
   </tr>
   </tr>
     <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Steven Mathew Roca Tineo</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">U202311361</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Barba Estrada, Bryan Eduardo</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">U202323479</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Daniela Araceli Gómez Flores</td>
