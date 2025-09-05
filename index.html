@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo"><span>Energix</span></div>
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars menu-icon"></i>
+                <i class="fa-solid fa-xmark close-icon"></i>
+            </button>
+
+            <div class="nav-links">
+                <a href="#hero">Nosotros</a>
+                <a href="#services">Servicios</a>
+                <a href="#testimonials">Testimonios</a>
+                <a href="#contact">Contacto</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="auth-buttons">
+                    <a href="#" class="">Iniciar Sesión</a>
+                </div>
+
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-center">
+                <h1>Energía inteligente y conectada, en la palma de tu mano</h1>
+                <p class="hero-desc">
+                    Energix te ayuda a entender, controlar y optimizar el uso de cada dispositivo en tu hogar, con
+                    reportes claros y alertas inteligentes.
+                </p>
+                <button class="cta-button">Empezar ahora</button>
+                <div class="hero-image">
+                    <img src="assets/hero-image.png" alt="Ilustración de laptop">
+                </div>
+                <div class="features-row">
+                    <div class="features-below">
+                        <h2>Deja que la tecnología<br>trabaje por ti</h2>
+                        <p>
+                            En Energix creemos que reducir el consumo eléctrico no tiene por qué ser complicado.<br>
+                            Nuestra plataforma transforma tus datos de energía en información clara, ayudándote a
+                            ahorrar sin perder comodidad.
+                        </p>
+                    </div>
+                    <img src="assets/feature-image.png" alt="Ilustración de laptop" class="feature-image-right">
+                </div>
+            </div>
+        </section>
+        <section class="liders" id="liders">
+            <h2>Con la confianza de líderes en energía</h2>
+            <div class="liders-carousel">
+                <div class="liders-track">
+                    <div class="liders-card"><img src="assets/lider 1.png" alt="lider 1"></div>
+                    <div class="liders-card"><img src="assets/lider 2.png" alt="lider 2"></div>
+                    <div class="liders-card"><img src="assets/lider 3.png" alt="lider 3"></div>
+                    <div class="liders-card"><img src="assets/lider 4.png" alt="lider 4"></div>
+                    <div class="liders-card"><img src="assets/lider 5.png" alt="lider 5"></div>
+                    <div class="liders-card"><img src="assets/lider 6.png" alt="lider 6"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services" id="services">
+
+            <h2>Tu consumo bajo control, siempre</h2>
+            <div>
+
+                <img src="assets/service 1.png" alt="service 1">
+                <p>Monitoreo en tiempo real</p>
+            </div>
+
+            <div>
+                <img src="assets/service 2.png" alt="service 2">
+                <p>Alertas de Consumo Inusual</p>
+            </div>
+
+            <div>
+                <img src="assets/service 3.png" alt="service 3">
+                <p>Reportes semanales</p>
+            </div>
+
+        </section>
+
+        <section class="testimoniasl" id="testimonials">
+            <h2>Experiencias que inspiran</h2>
+            <div class="testimonial-card">
+                <img src="assets/stars.png" alt="stars" class="testimonial-stars">
+                <p>Desde que uso Energix, reduje mi recibo de<br>luz un casi 20%. Ahora entiendo mejor<br>qué aparatos
+                    consumen más y cómo<br>optimizar mi consumo.</p>
+                <img src="assets/avatar1.png" alt="usuario 1" class="testimonial-avatar">
+
+                <h4 class="testimonial-name">De María López</h4>
+                <span>Lima</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/stars.png" alt="stars" class="testimonial-stars">
+                <p>Las alertas en tiempo real me ayudaron a<br>detectar un electrodoméstico que estaba<br>gastando de
+                    más. Es como tener un asesor<br>de energía en casa.</p>
+                <img src="assets/avatar2.png" alt="usuario 2" class="testimonial-avatar">
+
+                <h4 class="testimonial-name">De Jorge Ramírez</h4>
+                <span>Arequipa</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/stars.png" alt="stars" class="testimonial-stars">
+
+                <p>Lo mejor es la simplicidad. No necesito ser<br>experta en energía para ahorrar. Energix me<br>da la
+                    información clara y fácil de enteder .</p>
+                <img src="assets/avatar3.png" alt="usuario 3" class="testimonial-avatar">
+
+                <h4 class="testimonial-name">De Carolina Fernández</h4>
+                <span>Trujillo</span>
+            </div>
+
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h1>Contáctanos</h1>
+            <div class="contact-container">
+                <form name="frm" method="post" action="">
+                    <fieldset id="form">
+
+                        <ol>
+
+                            <li>
+                                <label>Nombres:</label>
+                                <input type="text" name="name" size="30" required />
+                            </li>
+
+
+                            <li>
+                                <label>Correo:</label>
+                                <input type="text" name="gmail" size="30" required />
+                            </li>
+
+
+                            <li>
+                                <label>Mensaje</label>
+                                <input type="text" name="asunto" size="80" required />
+                            </li>
+
+                        </ol>
+
+                        <p>
+                            <input type="submit" class="submit" value="Enviar" />
+                        </p>
+
+
+                    </fieldset>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Nosotros</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+
+        <div class="socials">
+            <img src="assets/ig.png" alt="ig" class="social-avatar">
+            <img src="assets/link.png" alt="link" class="social-avatar">
+            <img src="assets/git.png" alt="git" class="social-avatar">
+
+        </div>
+
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
