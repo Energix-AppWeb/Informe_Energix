@@ -29,7 +29,9 @@
 
             <div class="nav-actions">
                 <div class="auth-buttons">
-                    <a href="#" class="">Iniciar Sesión</a>
+                    <a href="#" class="login">Iniciar Sesión</a>
+                    <a href="#" class="sing-up">Registrarse</a>
+                    
                 </div>
 
                 <div class="language-selector">
@@ -97,6 +99,11 @@
             <div>
                 <img src="assets/service 3.png" alt="service 3">
                 <p>Reportes semanales</p>
+            </div>
+
+             <div>
+                <img src="assets/service 4.png" alt="service 3">
+                <p>Consejos de ahorros personalizados</p>
             </div>
 
         </section>
@@ -194,6 +201,37 @@
         </div>
 
     </footer>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <i class="fa-solid fa-xmark close-modal"></i>
+            <h2>Iniciar Sesión</h2>
+            <form class="auth-form">
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" class="cta-button">Iniciar Sesión</button>
+            </form>
+            <p class="auth-redirect">¿No tienes una cuenta? <a href="#" class="open-register">Regístrate aquí</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <i class="fa-solid fa-xmark close-modal"></i>
+            <h2>Registrarse</h2>
+            <form class="auth-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Confirmar contraseña" required>
+                <button type="submit" class="cta-button">Registrarse</button>
+            </form>
+            <p class="auth-redirect">¿Ya tienes una cuenta? <a href="#" class="open-login">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+
+
+
     <script type="module" src="script.js"></script>
 </body>
 
