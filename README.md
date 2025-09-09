@@ -186,47 +186,161 @@ Convertirnos en la plataforma líder en gestión energética para hogares, empod
 ## **1.2. Solution Profile**
 
 ### ***1.2.1. Antecedentes y problemática***
+
 Para describir los antecedentes y problemática, hemos aplicado la técnica "5W’s & 2H’s", una herramienta clave en el enfoque de Lean UX, para centrarnos realmente en las necesidades del usuario. Esto nos ayudó a definir la dirección de nuestro producto, Energix Manager, de la siguiente manera:
 
 **What**
+
 *¿Cuál es el problema?*
+
 El problema que Energix Manager busca resolver es el consumo ineficiente de energía eléctrica en los hogares urbanos del Perú. Esto se debe, en gran parte, a hábitos de uso inadecuados de los dispositivos y electrodomésticos, lo que provoca un incremento innecesario en la facturación para las familias y tiene un impacto ambiental negativo. Según el Ministerio de Energía y Minas (2022), el 28.6% de la electricidad consumida a nivel nacional en 2022 provino del sector residencial.
 
 **When**
+
 *¿Cuándo sucede el problema?*
+
 El problema ocurre constantemente en la vida cotidiana de los hogares. Esto sucede cuando las personas dejan las luces encendidas en habitaciones vacías, mantienen electrodomésticos en modo "stand by" o utilizan equipos que no son eficientes.
+
 *¿Cuándo utiliza el cliente el producto?*
+
 El cliente usa Energix Manager en su hogar y en cualquier momento del día, ya sea para monitorear su consumo en tiempo real, entender el gasto de un electrodoméstico o gestionar el uso de sus dispositivos.
 
 **Where**
+
 ¿Dónde surge el problema?
+
 El problema surge principalmente en los hogares urbanos del Perú, que son los principales consumidores de energía eléctrica a nivel residencial. 
 
 **Who**
+
 *¿Quiénes están involucrados?*
+
 Los principales involucrados son los miembros de las familias peruanas en sus hogares. Un estudio de caso demostró que al menos el 48% de los encuestados admitieron que alguien en su hogar utilizaba la energía de forma inadecuada (Chucuya Fuentes, 2021). Además, están involucradas las empresas eléctricas y las entidades gubernamentales como el Ministerio de Energía y Minas, ya que tienen la responsabilidad de educar y regular el consumo para fomentar la eficiencia energética.
+
 *¿A quiénes le sucede el problema?*
+
 El problema sucede a las familias que viven en áreas urbanas en el Perú, incluyendo tanto viviendas unifamiliares como multifamiliares.
+
 *¿Quién utilizará el producto?*
+
 El producto será utilizado principalmente por los propietarios de vivienda, adultos y jóvenes que toman decisiones sobre el uso de la electricidad y los electrodomésticos en casa. Estas personas son quienes pueden implementar cambios en los hábitos de consumo para lograr una mayor eficiencia energética
 
 **Why**
+
 *¿Por qué sucede el problema?*
+
 El problema ocurre debido a la falta de conocimiento y capacitación sobre el uso eficiente de la energía. La mayoría de las personas desconocen las prácticas y regulaciones para el ahorro energético, lo que perpetúa los hábitos de consumo ineficiente.
+
 *¿Qué llevó al usuario a esta situación?*
+
 Los usuarios se encuentran en esta situación debido a la falta de información y educación. Según Chucuya Fuentes (2021), el 93% de los encuestados desconocía la existencia de normas o leyes para el ahorro de energía, lo que demuestra una brecha de conocimiento que impide la toma de decisiones informadas para ahorrar energía y dinero.
 **How**
+
 *¿En qué condiciones los clientes usan nuestro producto?*
+
 Los clientes usan Energix Manager en su entorno doméstico. La plataforma está diseñada para ser accesible y fácil de usar, no requiere de conocimientos técnicos y puede ser utilizada desde un smartphone, tablet o computadora.
+
 *¿Cómo nos conocerán los usuarios?*
+
 Los usuarios conocerán Energix Manager a través de campañas de difusión y concientización que ataquen la falta de conocimiento sobre el consumo energético. Las estrategias clave incluyen alianzas con empresas eléctricas y el Ministerio de Energía y Minas, así como marketing digital.
+
 **How much**
+
 *¿En qué cantidad sucede el problema?*
+
 Según el estudio de Chucuya Fuentes (2021), los hábitos de consumo ineficiente son comunes. Dejar equipos encendidos fue el mal hábito más frecuente (46 menciones), seguido por el uso de "stand by" (25 menciones) y dejar las luces encendidas (21 menciones). En términos económicos, estos hábitos pueden generar un gasto anual adicional de hasta S/ 323.44 soles por hogar.
 
 <p align="center">
   <img src="images/Estadistica_1.png" alt="UH" width="1000">
 </p>
 
+### ***1.2.2. Lean UX Process***
 
+En esta parte se llevará a cabo el proceso de Lean UX, el cual incluye la definición de la visión del modelo de negocio que respalda nuestro producto de software. A través de este enfoque metodológico, es posible enfocar la atención tanto en el diseño de la solución como en los problemas detectados mediante el pensamiento de diseño.
 
+#### **1.2.2.1. Lean UX Problem Statements**
+
+**Contexto:** En los hogares urbanos del Perú, el consumo de energía eléctrica es significativo, representando casi un tercio de la demanda nacional. Sin embargo, los usuarios carecen de información y herramientas para entender y controlar este gasto. La dependencia de recibos de luz mensuales no les permite tomar decisiones informadas en tiempo real para gestionar su consumo.
+
+**Problema:** La falta de una herramienta accesible y fácil de usar que permita a las familias peruanas monitorear, gestionar y controlar su consumo de energía en tiempo real genera frustración por los altos costos, perpetúa hábitos de uso ineficiente y contribuye a un gasto innecesario que afecta tanto su economía como el medio ambiente.
+
+**Pregunta Clave:** ¿Cómo podemos diseñar una plataforma que empodere a las familias peruanas a tomar el control de su consumo de energía, brindándoles información clara y herramientas intuitivas para reducir sus costos y ser más eficientes, sin requerir conocimientos técnicos avanzados?
+
+#### **1.2.2.2. Lean UX Assumptions**
+
+**¿Quiénes son nuestros usuarios?**
+* Familias urbanas en el Perú.
+* Adultos o jóvenes de 20 a 45 años, con educación media o superior, que gestionan las finanzas del hogar.
+* Personas preocupadas por el ahorro económico y la sostenibilidad.
+**¿Dónde encaja nuestro servicio en su trabajo o vida?**
+* En la gestión de sus gastos mensuales.
+* En la toma de decisiones sobre el uso de electrodomésticos.
+* En la rutina de monitoreo del hogar.
+**¿Qué problemas tiene nuestro producto y cómo se puede resolver?**
+
+Problema de Integración: La conexión a los sistemas de facturación de empresas eléctricas.
+
+Solución: Se puede resolver mediante alianzas estratégicas con las compañías eléctricas. 
+
+Problema de Hábitos: La resistencia de los usuarios a cambiar sus hábitos de consumo.
+
+Solución: La plataforma será intuitiva y motivadora. Se usarán notificaciones gamificadas, comparaciones de consumo y visualizaciones 
+claras para hacer el ahorro tangible y gratificante.
+
+**¿Cómo y cuándo es usado nuestro producto?**
+
+* Al final de cada día para revisar el consumo.
+
+* Al recibir la factura de electricidad, para entender los picos de consumo.
+
+* En tiempo real, para verificar el impacto de usar un electrodoméstico específico.
+
+**¿Qué características son importantes?**
+* Compatibilidad con la mayoría de los electrodomésticos y medidores de energía en los hogares peruanos.
+* Interfaz de usuario intuitiva y amigable para personas sin conocimientos técnicos.
+* Datos en tiempo real sobre el consumo.
+* Alertas y notificaciones personalizables sobre consumos elevados.
+* Sugerencias de ahorro y análisis predictivo.
+ * Escalabilidad para añadir nuevas funcionalidades y electrodomésticos.
+**¿Cómo debe verse nuestro producto y cómo comportarse?**
+
+Energix Manager debe ser una plataforma que transmita confianza y simplicidad. Su comportamiento debe ser intuitivo y proactivo, ofreciendo información clara y recomendaciones útiles sin abrumar al usuario. Visualmente, debe ser limpio y moderno para atraer a un público joven y tecnológico, pero suficientemente claro para todos los miembros de la familia.
+
+**User Outcome**
+Para los usuarios:
+* Reducción significativa en el monto de su factura de electricidad.
+* Mayor control y visibilidad sobre su consumo energético.
+* Menos estrés y frustración al entender por qué sus recibos son altos.
+* Adopción de hábitos de consumo más eficientes y sostenibles.
+
+**Features**
+
+* Monitoreo en tiempo real: Muestra el consumo de energía en vivo.
+
+* Análisis detallado: Desglosa el consumo por electrodoméstico y hora del día.
+
+* Alertas y notificaciones: Envía avisos sobre consumos elevados o inusuales.
+
+* Consejos personalizados: Ofrece sugerencias específicas para ahorrar energía según los hábitos del usuario.
+
+#### 1.2.2.3. Lean UX Hypothesis Statements
+
+Hipótesis 1: Monitoreo y conciencia
+
+Creemos que al proporcionar a los usuarios de la plataforma una visualización en tiempo real de su consumo energético, ellos se volverán más conscientes de sus hábitos.
+
+Sabremos que hemos tenido éxito cuando el 50% de los usuarios activos demuestre una reducción de consumo eléctrico del 10% en el primer mes de uso.
+
+Hipótesis 2: Impacto en la facturación
+
+Creemos que la implementación de alertas personalizadas y consejos de ahorro específicos para los electrodomésticos de mayor consumo como la refrigeradora y la iluminación permitirá a los usuarios reducir su gasto.
+
+Sabremos que hemos tenido éxito cuando el 70% de los usuarios que utilicen estas funciones reportan una disminución en el costo de su factura mensual en los primeros tres meses.
+
+#### **1.2.2.4. Lean UX Canvas**
+
+Tras completar las etapas del Lean UX Process, el siguiente paso es elaborar el Lean UX Canvas. Esta herramienta nos ayuda a visualizar de manera integral el problema y sirve como punto de partida para la investigación previa al diseño de la solución propuesta.
+
+<p align="center">
+  <img src="images/LeanUxCanvas.png" alt="UH" width="1000">
+</p>
