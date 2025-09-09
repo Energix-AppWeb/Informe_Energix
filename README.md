@@ -269,13 +269,17 @@ En esta parte se llevará a cabo el proceso de Lean UX, el cual incluye la defin
 #### **1.2.2.2. Lean UX Assumptions**
 
 **¿Quiénes son nuestros usuarios?**
+
 * Familias urbanas en el Perú.
 * Adultos o jóvenes de 20 a 45 años, con educación media o superior, que gestionan las finanzas del hogar.
 * Personas preocupadas por el ahorro económico y la sostenibilidad.
+  
 **¿Dónde encaja nuestro servicio en su trabajo o vida?**
+
 * En la gestión de sus gastos mensuales.
 * En la toma de decisiones sobre el uso de electrodomésticos.
 * En la rutina de monitoreo del hogar.
+  
 **¿Qué problemas tiene nuestro producto y cómo se puede resolver?**
 
 Problema de Integración: La conexión a los sistemas de facturación de empresas eléctricas.
@@ -296,18 +300,22 @@ claras para hacer el ahorro tangible y gratificante.
 * En tiempo real, para verificar el impacto de usar un electrodoméstico específico.
 
 **¿Qué características son importantes?**
+
 * Compatibilidad con la mayoría de los electrodomésticos y medidores de energía en los hogares peruanos.
 * Interfaz de usuario intuitiva y amigable para personas sin conocimientos técnicos.
 * Datos en tiempo real sobre el consumo.
 * Alertas y notificaciones personalizables sobre consumos elevados.
 * Sugerencias de ahorro y análisis predictivo.
  * Escalabilidad para añadir nuevas funcionalidades y electrodomésticos.
+
 **¿Cómo debe verse nuestro producto y cómo comportarse?**
 
 Energix Manager debe ser una plataforma que transmita confianza y simplicidad. Su comportamiento debe ser intuitivo y proactivo, ofreciendo información clara y recomendaciones útiles sin abrumar al usuario. Visualmente, debe ser limpio y moderno para atraer a un público joven y tecnológico, pero suficientemente claro para todos los miembros de la familia.
 
 **User Outcome**
+
 Para los usuarios:
+
 * Reducción significativa en el monto de su factura de electricidad.
 * Mayor control y visibilidad sobre su consumo energético.
 * Menos estrés y frustración al entender por qué sus recibos son altos.
@@ -325,13 +333,13 @@ Para los usuarios:
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-Hipótesis 1: Monitoreo y conciencia
+**Hipótesis 1: Monitoreo y conciencia**
 
 Creemos que al proporcionar a los usuarios de la plataforma una visualización en tiempo real de su consumo energético, ellos se volverán más conscientes de sus hábitos.
 
 Sabremos que hemos tenido éxito cuando el 50% de los usuarios activos demuestre una reducción de consumo eléctrico del 10% en el primer mes de uso.
 
-Hipótesis 2: Impacto en la facturación
+**Hipótesis 2: Impacto en la facturación**
 
 Creemos que la implementación de alertas personalizadas y consejos de ahorro específicos para los electrodomésticos de mayor consumo como la refrigeradora y la iluminación permitirá a los usuarios reducir su gasto.
 
@@ -344,3 +352,126 @@ Tras completar las etapas del Lean UX Process, el siguiente paso es elaborar el 
 <p align="center">
   <img src="images/LeanUxCanvas.png" alt="UH" width="1000">
 </p>
+
+## **1.3. Segmentos Objetivos**
+
+Esta sección incluye la descripción de los segmentos asociados al dominio del problema, incluyendo características demográficas e información estadística de sustento.
+
+<ins>**1. Familias Urbanas de Clase Media**</ins>
+
+Este segmento es nuestro público objetivo principal. Son los adultos o miembros del hogar quienes toman las decisiones de gasto.
+
+**Características Demográficas:**
+
+***Edad:** 35 a 60 años.
+***Nivel Socioeconómico:** C y B.
+***Composición Familiar:** Familias consolidadas, con o sin hijos en casa.
+
+**Hábitos y Motivación:** Pasan la mayor parte del día en el hogar y son los principales gestores del consumo de electrodomésticos. Buscan soluciones prácticas y sencillas para controlar y reducir los costos de la factura de luz.
+
+**Información de Sustento:**
+
+La clase media en el Perú ha crecido significativamente, representando un segmento con un poder de consumo energético importante. Un hogar promedio en Lima consume alrededor de 172 kWh/mes, un valor que supera ampliamente el promedio nacional y refleja un alto uso de electrodomésticos (Autosolar Perú).
+
+<ins>**2. Estudiantes y Jóvenes con Presupuesto Ajustado**</ins>
+Este segmento busca soluciones prácticas para reducir gastos, ya que viven con presupuestos limitados. Son nativos digitales y están abiertos a probar aplicaciones que les ofrezcan beneficios tangibles de forma inmediata.
+
+**Características Demográficas:**
+
+***Edad:** 18 a 30 años.
+***Nivel Socioeconómico:** C, D y E.
+***Composición Familiar:** Viven en departamentos compartidos o alquilados.
+
+**Hábitos y Motivación:** Buscan maneras prácticas y rápidas de reducir sus gastos mensuales para hacer rendir su presupuesto.
+
+**Información de Sustento:**
+
+Las viviendas alquiladas en zonas universitarias o céntricas suelen tener un alto consumo de energía por la falta de conciencia compartida y la falta de control individual sobre el gasto.
+
+Este segmento está muy influenciado por la información en línea y las recomendaciones. Una solución fácil de usar que demuestre un ahorro real podría ser adoptada rápidamente y difundida a través de sus círculos sociales.
+
+<hr>
+
+# **Capítulo II: Requirements Elicitation & Analysis**
+
+## **2.1. Competidores**
+
+### ***2.1.1. Análisis competitivo***
+### ***2.1.2. Estrategias y tácticas frente a competidores***
+## **2.2. Entrevistas**
+
+### ***2.2.1. Diseño de entrevistas***
+### 2.2.2. Registro de entrevistas
+### ***2.2.3. Análisis de entrevistas***
+## **2.3. Needfinding**
+### ***2.3.1. User Personas***
+### ***2.3.2. User Task Matrix***
+### ***2.3.3. User Journey Mapping***
+### ***2.3.4. Empathy Mapping***
+### ***2.3.5. As-is Scenario Mapping***
+## **2.4. Ubiquitous Language**
+
+<hr>
+
+# **Capítulo III: Requirements Specification**
+## **3.1. To-Be Scenario Mapping**
+## **3.2. User Stories**
+
+## **3.3. Impact Mapping**
+
+<p align="center">
+  <img src="images/ImpactMap.png" alt="PB" width="1000">
+</p>
+
+## **3.4. Product Backlog**
+
+Realizamos el product Backlog de Energix Manager en la plataforma de Trello:
+
+[https://trello.com/invite/b/6858d3899919c3f6565deafb/ATTI9188cbdb75bfd6dc0e468dc3688b2f0d6E232D66/productbacklog](https://trello.com/invite/b/6858d3899919c3f6565deafb/ATTI9188cbdb75bfd6dc0e468dc3688b2f0d6E232D66/productbacklog)
+
+| Orden  | User Story Id | Título                                    | Descripción                                                                                                   | Story Points |
+|----|---------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------|
+| 1  | US01          | Consumo en tiempo real                   | Como usuario, quiero ver mi consumo energético en vivo para reaccionar de inmediato y no pasarme de mi presupuesto. | 5            |
+| 2  | US02          | Historial de consumo                     | Como usuario, quiero ver el historial de consumo (día/semana/mes) para identificar patrones y planificar gastos. | 3            |
+| 3  | US03          | Consumo por electrodoméstico             | Como usuario, quiero ver el consumo por aparato en un gráfico circular para identificar cuáles generan más gasto en mi hogar. | 5            |
+| 4  | US05          | Comparación mensual y gráfica de consumo | Como usuario, quiero comparar mi consumo entre meses y verlo en gráficas para evaluar mis medidas de ahorro. | 5            |
+| 5  | US17          | Gráfica de consumo diario por horas      | Como usuario, quiero ver mi consumo a lo largo del día en una gráfica de líneas para detectar picos de gasto. | 5            |
+| 6  | US07          | Visualizar promedio de consumo           | Como usuario, quiero ver el consumo promedio en watts para entender mi nivel típico de gasto. | 2            |
+| 7  | US06          | Pronóstico y costo estimado              | Como usuario, quiero estimar mi consumo futuro en base a hábitos para anticipar el monto de la factura. | 8            |
+| 8  | US08          | Alerta de consumo inusual                | Como usuario, quiero recibir alertas cuando un electrodoméstico consuma más de lo normal. | 5            |
+| 9  | US09          | Límite de consumo mensual                | Como usuario, quiero establecer un límite mensual y recibir avisos al acercarme. | 5            |
+| 10 | US10          | Aviso por luces encendidas               | Como usuario, quiero recibir recordatorios cuando se detecten luces encendidas demasiado tiempo. | 3            |
+| 11 | US11          | Alertas personalizables en Panel         | Como usuario, quiero configurar qué alertas recibir y verlas reflejadas en el ícono del Panel. | 5            |
+| 12 | US04          | Resumen diario automático por correo     | Como usuario, quiero recibir un resumen automático diario en mi correo. | 3            |
+| 13 | US12          | Consejos adaptados al usuario            | Como usuario, quiero recibir consejos personalizados en base a mis patrones de consumo. | 5            |
+| 14 | US13          | Buenas prácticas generales               | Como usuario, quiero ver un listado de buenas prácticas rápidas para reducir consumo. | 2            |
+| 15 | US14          | Horarios de menor costo                  | Como usuario, quiero conocer las horas más económicas de electricidad. | 3            |
+| 16 | US15          | Estimación de ahorro                     | Como usuario, quiero ver el ahorro potencial de aplicar un consejo. | 3            |
+| 17 | US16          | Panel integral de métricas y gráficas    | Como usuario, quiero ver en un panel mis indicadores principales (kWh, costo, ahorro). | 5            |
+| 18 | US18          | Acceso a reportes desde menú lateral     | Como usuario, quiero acceder a la sección de reportes desde el menú lateral. | 2            |
+| 19 | US25          | Exportación de reportes                  | Como usuario, quiero exportar mis estadísticas en PDF o Excel. | 3            |
+| 20 | US23          | Integración con facturas eléctricas      | Como usuario, quiero vincular mi recibo digital de electricidad y comparar consumos. | 5            |
+| 21 | US24          | Compatibilidad con smart devices         | Como usuario premium, quiero compatibilidad con dispositivos inteligentes IoT. | 8            |
+| 22 | US21          | Registro de electrodomésticos            | Como usuario, quiero añadir o eliminar electrodomésticos en mi perfil. | 3            |
+| 23 | US22          | Personalización del panel                | Como usuario, quiero elegir qué métricas ver primero en mi panel. | 3            |
+| 24 | US19          | Gestión y acceso al perfil personal      | Como usuario, quiero registrar, actualizar y acceder a mis datos personales. | 2            |
+| 25 | US20          | Configuración completa                   | Como usuario, quiero configurar idioma y notificaciones desde el menú lateral. | 3            |
+| 26 | US26          | Página de bienvenida clara               | Como visitante, quiero que la landing muestre qué es Energix Manager de manera simple. | 2            |
+| 27 | US27          | Información en el footer                 | Como visitante, quiero ver información útil en el pie de página. | 1            |
+| 28 | US28          | Encabezado con navegación                | Como visitante, quiero un encabezado con menú de navegación. | 2            |
+| 29 | US30          | Planes de suscripción                    | Como visitante, quiero ver distintos planes de suscripción. | 2            |
+| 30 | US31          | Características de Energix Manager       | Como visitante, quiero ver lista de características de la app. | 2            |
+| 31 | US32          | Conociendo al equipo                     | Como visitante, quiero ver un video de presentación del equipo. | 3            |
+| 32 | US33          | Video tutorial introductorio             | Como visitante, quiero acceder a un tutorial para comprender cómo funciona la app. | 3            |
+| 33 | US34          | Multilenguaje                            | Como visitante, quiero cambiar entre español e inglés en la landing. | 3            |
+| 34 | US29          | Formulario de contacto                   | Como visitante, quiero un formulario para comunicarme con soporte. | 2            |
+| 35 | US35          | Inicio con credenciales                  | Como usuario, quiero acceder con correo y contraseña de forma segura. | 3            |
+| 36 | US36          | Recuperación de contraseña               | Como usuario, quiero recuperar mi contraseña olvidada. | 2            |
+| 37 | US37          | Creación de cuenta                       | Como potencial usuario, quiero crear mi cuenta ingresando nombre, correo y clave. | 3            |
+| 38 | US38          | Cierre de sesión                         | Como usuario, quiero cerrar sesión de forma segura. | 1            |
+
+
+<hr>
+
+# **Capítulo IV: Product Design**
+
