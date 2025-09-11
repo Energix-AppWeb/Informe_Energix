@@ -93,7 +93,7 @@
     <a href="#232-user-task-matrix">2.3.2. User Task Matrix.</a><br>
     <a href="#233-user-journey-mapping">2.3.3. User Journey Mapping.</a><br>
     <a href="#234-empathy-mapping">2.3.4. Empathy Mapping.</a><br>
-    <a href="#235-to-be-scenario-mapping">2.3.5. to be scenario mapping.</a><br>
+    <a href="#235-as-is-scenario-mapping">2.3.5. as is scenario mapping.</a><br>
   </ul>
   <a href="#24-big-picture-eventstorming">2.4. Big Picture EventStorming.</a><br>
   <a href="#25-ubiquitous-language">2.5. Ubiquitous Language.</a><br>
@@ -103,6 +103,7 @@
 <ul>
   <a href="#31-to-be-scenario-mapping">3.1. To-Be Scenario Mapping.</a><br>
   <a href="#32-user-stories">3.2. User Stories.</a><br>
+  <a href="#321-technical-stories">3.2.1. Technical Stories.</a><br>
   <a href="#33-impact-mapping">3.3. Impact Mapping.</a><br>
   <a href="#34-product-backlog">3.4. Product Backlog.</a><br>
 </ul>
@@ -306,7 +307,7 @@ claras para hacer el ahorro tangible y gratificante.
 * Datos en tiempo real sobre el consumo.
 * Alertas y notificaciones personalizables sobre consumos elevados.
 * Sugerencias de ahorro y análisis predictivo.
- * Escalabilidad para añadir nuevas funcionalidades y electrodomésticos.
+* Escalabilidad para añadir nuevas funcionalidades y electrodomésticos.
 
 **¿Cómo debe verse nuestro producto y cómo comportarse?**
 
@@ -363,9 +364,9 @@ Este segmento es nuestro público objetivo principal. Son los adultos o miembros
 
 **Características Demográficas:**
 
-***Edad:** 35 a 60 años.
-***Nivel Socioeconómico:** C y B.
-***Composición Familiar:** Familias consolidadas, con o sin hijos en casa.
+* **Edad:** 35 a 60 años.
+* **Nivel Socioeconómico:** C y B.
+* **Composición Familiar:** Familias consolidadas, con o sin hijos en casa.
 
 **Hábitos y Motivación:** Pasan la mayor parte del día en el hogar y son los principales gestores del consumo de electrodomésticos. Buscan soluciones prácticas y sencillas para controlar y reducir los costos de la factura de luz.
 
@@ -378,9 +379,9 @@ Este segmento busca soluciones prácticas para reducir gastos, ya que viven con 
 
 **Características Demográficas:**
 
-***Edad:** 18 a 30 años.
-***Nivel Socioeconómico:** C, D y E.
-***Composición Familiar:** Viven en departamentos compartidos o alquilados.
+* **Edad:** 18 a 30 años.
+* **Nivel Socioeconómico:** C, D y E.
+* **Composición Familiar:** Viven en departamentos compartidos o alquilados.
 
 **Hábitos y Motivación:** Buscan maneras prácticas y rápidas de reducir sus gastos mensuales para hacer rendir su presupuesto.
 
@@ -414,16 +415,139 @@ Este segmento está muy influenciado por la información en línea y las recomen
 <hr>
 
 # **Capítulo III: Requirements Specification**
+
 ## **3.1. To-Be Scenario Mapping**
+
+El To-Be Scenario Mapping describe cómo se espera que los usuarios interactúen con la solución propuesta en el futuro. Permite visualizar de manera narrativa y estructurada los procesos deseados, identificando mejoras frente a la situación actual y sirviendo como base para la definición de requerimientos.
+
+**Segmento 1:** Familias Urbanas de Clase Media
+
+<p align="center">
+  <img src="images/To-Be Scenario Map – Laura Fernández.png" alt="PB" width="1000">
+</p>
+
+**Segmento 2:** Estudiantes y Jóvenes con Presupuesto Ajustado
+
+<p align="center">
+  <img src="images/To-Be Scenario Map – Diego Rojas.png" alt="PB" width="1000">
+</p>
+
+
 ## **3.2. User Stories**
+
+Las User Stories representan las necesidades y expectativas de los usuarios finales expresadas en un lenguaje sencillo y centrado en su valor. A través de ellas se traduce lo que los usuarios quieren lograr al usar el producto, asegurando que las funcionalidades desarrolladas estén alineadas con sus objetivos reales.
+
+| Epic                                      | ID   |
+|-------------------------------------------|------|
+| Monitoreo Inteligente del Consumo         | EP01 |
+| Alertas Automáticas                       | EP02 |
+| Recomendaciones Personalizadas            | EP03 |
+| Panel Estadístico                         | EP04 |
+| Perfil y Configuración del Usuario        | EP05 |
+| Integración & Exportación de Datos        | EP06 |
+| Landing Page                              | EP07 |
+| Inicio de Sesión                          | EP08 |
+
+
+| Story ID | Título                                     | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|----------|---------------------------------------------|-------------|--------------------------|----------------------------|
+| US01     | Consumo en tiempo real                     | Como usuario, quiero ver mi consumo energético en vivo para reaccionar de inmediato y no pasarme de mi presupuesto. | **Escenario 1:** Visualización del consumo instantáneo<br>Given que accedo al panel principal<br>When me encuentro en la pestaña “Panel”<br>Then el sistema muestra los kWh y su equivalente en soles en tiempo real. | EP01 |
+| US02     | Historial de consumo                       | Como usuario, quiero ver el historial de consumo (día/semana/mes) para identificar patrones y planificar los gastos de mi hogar. | **Escenario 1:** Consulta del historial<br>Given que ingreso al módulo de historial<br>When selecciono un rango de fechas<br>Then el sistema muestra consumo total y promedio en ese período. | EP01 |
+| US03     | Consumo por electrodoméstico               | Como miembro de familia urbana de clase media, quiero ver el consumo por aparato en un gráfico circular para identificar cuáles generan más gasto en mi hogar. | **Escenario 1:** Distribución por dispositivos<br>Given que tengo varios electrodomésticos registrados<br>When ingreso al “Panel”<br>Then el sistema muestra un gráfico circular con porcentajes de consumo por aparato. | EP01 |
+| US04     | Resumen diario automático por correo       | Como estudiante con presupuesto ajustado, quiero recibir un resumen automático diario para controlar mis gastos sin necesidad de revisar la app constantemente. | **Escenario 1:** Recepción de resumen diario<br>Given que configuro notificaciones<br>When finaliza el día<br>Then recibo un resumen de consumo en mi correo. | EP01 |
+| US05     | Comparación mensual y gráfica de consumo   | Como miembro de familia urbana de clase media, quiero comparar mi consumo entre meses y visualizarlo en barras para evaluar mis medidas de ahorro. | **Escenario 1:** Comparación de meses<br>Given que selecciono la opción “Comparar meses”<br>When elijo dos períodos<br>Then el sistema muestra consumos y diferencias porcentuales.<br>**Escenario 2:** Visualización mensual<br>Given que ingreso al “Panel”<br>When consulto “Uso este mes”<br>Then veo un gráfico de barras con consumo diario. | EP01 |
+| US06     | Pronóstico y costo estimado de consumo     | Como miembro de familia urbana de clase media, quiero estimar mi consumo futuro en base a mis hábitos para anticipar el monto de mi factura de electricidad. | **Escenario 1:** Proyección de consumo<br>Given que el sistema tiene mis datos históricos<br>When consulto la predicción<br>Then se muestra la proyección del gasto mensual y su costo estimado. | EP01 |
+| US07     | Visualizar promedio de consumo             | Como usuario, quiero ver el consumo promedio en watts para entender mi nivel típico de gasto. | **Escenario 1:** Consumo promedio<br>Given que ingreso al “Panel”<br>When reviso el cuadro “Promedio”<br>Then el sistema muestra el promedio de consumo registrado. | EP01 |
+| US08     | Alerta de consumo inusual                  | Como estudiante con presupuesto ajustado, quiero recibir alertas cuando un electrodoméstico consuma más de lo normal para desconectarlo y no gastar de más. | **Escenario 1:** Notificación por consumo anormal<br>Given que un dispositivo excede su consumo promedio<br>When ocurre la variación<br>Then recibo una notificación inmediata. | EP02 |
+| US09     | Límite de consumo mensual                  | Como miembro de familia urbana de clase media, quiero establecer un límite mensual y recibir avisos al acercarme para mantener control financiero en el hogar. | **Escenario 1:** Aviso preventivo al 80% del límite<br>Given que fijo un límite<br>When alcanzo el 80%<br>Then recibo una notificación.<br>**Escenario 2:** Aviso al superar el límite<br>Given que fijo un límite<br>When lo supero<br>Then recibo una alerta indicando exceso. | EP02 |
+| US10     | Aviso por luces encendidas                 | Como miembro de familia urbana de clase media, quiero recibir recordatorios cuando se detecten luces encendidas demasiado tiempo para evitar gastos innecesarios. | **Escenario 1:** Recordatorio por luces activas<br>Given que una luz permanece encendida más de X horas<br>When el sistema lo detecta<br>Then me envía una notificación. | EP02 |
+| US11     | Alertas personalizables en “Panel”         | Como usuario, quiero configurar qué alertas recibir y verlas reflejadas en el ícono del “Panel” para mantenerme informado. | **Escenario 1:** Personalización de alertas<br>Given que ingreso a configuración<br>When ajusto parámetros<br>Then las notificaciones se adaptan a mis preferencias.<br>**Escenario 2:** Visualización de alertas<br>Given que recibo una alerta<br>When accedo al “Panel”<br>Then el ícono de campana muestra la notificación pendiente. | EP02 |
+| US12     | Consejos adaptados al usuario              | Como usuario, quiero recibir consejos personalizados en base a mis patrones de consumo. | **Escenario 1:** Recomendación personalizada<br>Given que el sistema detecta mis hábitos<br>When consulto sugerencias<br>Then recibo tips de ahorro adaptados a mi consumo. | EP03 |
+| US13     | Buenas prácticas generales                 | Como usuario, quiero ver un listado de buenas prácticas rápidas para reducir consumo. | **Escenario 1:** Acceso a buenas prácticas<br>Given que accedo a la sección de consejos<br>When selecciono “Prácticas generales”<br>Then visualizo una lista con sugerencias estándar de ahorro. | EP03 |
+| US14     | Horarios de menor costo                    | Como usuario, quiero conocer las horas más económicas de electricidad. | **Escenario 1:** Consulta de horarios<br>Given que accedo a la sección de tarifas<br>When selecciono “Horas económicas”<br>Then el sistema muestra los tramos horarios de menor costo. | EP03 |
+| US15     | Estimación de ahorro                       | Como usuario, quiero ver el ahorro potencial de aplicar un consejo. | **Escenario 1:** Cálculo de ahorro<br>Given que selecciono un consejo<br>When activo la opción “Estimar ahorro”<br>Then el sistema muestra el ahorro estimado en kWh y soles. | EP03 |
+| US16     | Panel integral de métricas y gráficas      | Como usuario, quiero ver en un panel mis indicadores principales (kWh, costo, ahorro). | **Escenario 1:** Visualización integral<br>Given que accedo al “Panel”<br>When cargo la vista<br>Then aparecen indicadores clave y gráficas relacionadas. | EP04 |
+| US17     | Gráfica de consumo diario por horas        | Como usuario, quiero ver mi consumo a lo largo del día en una gráfica de líneas para detectar picos de gasto. | **Escenario 1:** Consumo horario<br>Given que ingreso a la vista diaria<br>When consulto la gráfica<br>Then observo un gráfico de líneas con variaciones por hora. | EP04 |
+| US18     | Acceso a reportes desde menú lateral       | Como usuario, quiero acceder a la sección de reportes desde el menú lateral. | **Escenario 1:** Navegación lateral<br>Given que abro el menú lateral<br>When selecciono “Reportes”<br>Then soy redirigido a la sección de reportes. | EP04 |
+| US19     | Gestión y acceso al perfil personal        | Como usuario, quiero registrar, actualizar y acceder a mis datos personales. | **Escenario 1:** Registro de datos<br>Given que accedo a “Mi perfil”<br>When agrego información<br>Then se guarda correctamente.<br>**Escenario 2:** Actualización de datos<br>Given que accedo a “Mi perfil”<br>When edito mis datos<br>Then el sistema guarda los cambios. | EP05 |
+| US20     | Configuración completa                     | Como usuario, quiero configurar idioma y notificaciones desde el menú lateral. | **Escenario 1:** Configuración de idioma<br>Given que accedo a ajustes<br>When selecciono otro idioma<br>Then la interfaz cambia automáticamente.<br>**Escenario 2:** Configuración de notificaciones<br>Given que accedo a ajustes<br>When activo/desactivo notificaciones<br>Then el sistema aplica las preferencias. | EP05 |
+| US21     | Registro de electrodomésticos              | Como usuario, quiero añadir o eliminar electrodomésticos en mi perfil. | **Escenario 1:** Agregar dispositivo<br>Given que accedo a la sección de dispositivos<br>When ingreso datos de un electrodoméstico<br>Then se guarda en mi perfil.<br>**Escenario 2:** Eliminar dispositivo<br>Given que accedo a la sección de dispositivos<br>When selecciono eliminar<br>Then el sistema borra el electrodoméstico de la lista. | EP05 |
+| US22     | Personalización del panel                  | Como usuario, quiero elegir qué métricas ver primero en mi panel. | **Escenario 1:** Configuración de métricas<br>Given que accedo al “Panel”<br>When selecciono personalizar<br>Then puedo ordenar métricas según mi preferencia. | EP05 |
+| US23     | Integración con facturas eléctricas        | Como usuario, quiero vincular mi recibo digital de electricidad y comparar consumos. | **Escenario 1:** Carga de recibo<br>Given que accedo a “Facturas”<br>When subo un archivo de recibo<br>Then el sistema lo procesa y guarda.<br>**Escenario 2:** Comparación<br>Given que tengo facturas cargadas<br>When selecciono dos períodos<br>Then veo la comparación gráfica de consumo. | EP06 |
+| US24     | Compatibilidad con smart devices           | Como usuario premium, quiero compatibilidad con dispositivos inteligentes IoT. | **Escenario 1:** Vinculación IoT<br>Given que tengo un dispositivo IoT<br>When lo vinculo en “Dispositivos”<br>Then el sistema reconoce y muestra su consumo en el panel. | EP06 |
+| US25     | Exportación de reportes                    | Como usuario, quiero exportar mis estadísticas en PDF o Excel. | **Escenario 1:** Exportar a PDF<br>Given que accedo a reportes<br>When selecciono “Exportar PDF”<br>Then recibo el archivo descargable.<br>**Escenario 2:** Exportar a Excel<br>Given que accedo a reportes<br>When selecciono “Exportar Excel”<br>Then recibo el archivo en formato .xlsx. | EP06 |
+| US26     | Página de bienvenida clara                 | Como visitante, quiero que la landing muestre qué es Energix Manager de manera simple. | **Escenario 1:** Página introductoria<br>Given que ingreso a la web<br>When cargo la landing<br>Then visualizo un mensaje claro de qué es Energix Manager. | EP07 |
+| US27     | Información en el footer                   | Como visitante, quiero ver información útil en el pie de página. | **Escenario 1:** Footer visible<br>Given que navego en la landing<br>When llego al pie de página<br>Then observo enlaces a contacto, términos y redes sociales. | EP07 |
+| US28     | Encabezado con navegación                  | Como visitante, quiero un encabezado con menú de navegación. | **Escenario 1:** Menú superior<br>Given que accedo a la landing<br>When interactúo con el encabezado<br>Then puedo navegar entre secciones principales. | EP07 |
+| US29     | Formulario de contacto                     | Como visitante, quiero un formulario para comunicarme con soporte. | **Escenario 1:** Envío de mensaje<br>Given que completo el formulario<br>When presiono “Enviar”<br>Then el sistema envía el mensaje a soporte y confirma el envío. | EP07 |
+| US30     | Planes de suscripción                      | Como visitante, quiero ver distintos planes de suscripción. | **Escenario 1:** Listado de planes<br>Given que accedo a la sección de precios<br>When cargo la vista<br>Then veo los diferentes planes con sus características y costos. | EP07 |
+| US31     | Características de Energix Manager         | Como visitante, quiero ver lista de características de la app. | **Escenario 1:** Información de features<br>Given que accedo a la landing<br>When voy a la sección “Características”<br>Then se listan las principales funcionalidades de la app. | EP07 |
+| US32     | Conociendo al equipo                       | Como visitante, quiero ver un video de presentación del equipo. | **Escenario 1:** Video visible<br>Given que accedo a la landing<br>When llego a la sección “Equipo”<br>Then se muestra un video de presentación. | EP07 |
+| US33     | Video tutorial introductorio               | Como visitante, quiero acceder a un tutorial para comprender cómo funciona la app. | **Escenario 1:** Acceso a tutorial<br>Given que accedo a la landing<br>When selecciono “Tutorial”<br>Then se reproduce un video explicativo de la app. | EP07 |
+| US34     | Multilenguaje                              | Como visitante, quiero cambiar entre español e inglés en la landing. | **Escenario 1:** Cambio de idioma<br>Given que accedo al encabezado<br>When selecciono “EN/ES”<br>Then la landing se traduce automáticamente. | EP07 |
+| US35     | Inicio con credenciales                    | Como usuario, quiero acceder con correo y contraseña de forma segura. | **Escenario 1:** Login válido<br>Given que ingreso usuario y contraseña correctos<br>When presiono ingresar<br>Then accedo a mi panel.<br>**Escenario 2:** Login inválido<br>Given que ingreso credenciales erróneas<br>When intento acceder<br>Then el sistema muestra error de autenticación. | EP08 |
+| US36     | Recuperación de contraseña                 | Como usuario, quiero recuperar mi contraseña olvidada. | **Escenario 1:** Recuperar clave<br>Given que selecciono “¿Olvidaste tu contraseña?”<br>When ingreso mi correo<br>Then el sistema envía un enlace de recuperación. | EP08 |
+| US37     | Creación de cuenta                         | Como potencial usuario, quiero crear mi cuenta ingresando nombre, correo y clave. | **Escenario 1:** Registro exitoso<br>Given que completo el formulario de registro<br>When envío los datos<br>Then el sistema crea la cuenta y me da acceso inicial. | EP08 |
+| US38     | Cierre de sesión                           | Como usuario, quiero cerrar sesión de forma segura. | **Escenario 1:** Logout<br>Given que estoy autenticado<br>When selecciono “Cerrar sesión”<br>Then el sistema finaliza la sesión y me redirige a la página de inicio. | EP08 |
+
+### ***3.2.1. Technical Stories***
+
+Las Technical Stories detallan requerimientos técnicos derivados de las User Stories. Están orientadas al equipo de desarrollo y especifican aspectos relacionados con infraestructura, integraciones, seguridad o rendimiento, necesarios para que las funcionalidades puedan implementarse correctamente.
+
+
+| ID   | Título Técnico                                | Descripción | Acceptance Criteria | Relacionado con (US ID) |
+|------|-----------------------------------------------|-------------|----------------------|--------------------------|
+| TS01 | Endpoint GET de consumo en tiempo real        | Como developer, quiero implementar un endpoint que devuelva el consumo energético en tiempo real del usuario autenticado. | **Escenario:** Consulta exitosa<br>Given que el usuario está autenticado<br>When consulta su consumo actual<br>Then el sistema retorna el valor en kWh y soles. | US01 |
+| TS02 | Endpoint GET historial de consumo             | Como developer, quiero implementar un endpoint que devuelva el historial de consumo por rango de fechas. | **Escenario:** Consulta por rango<br>Given que el usuario selecciona un rango de fechas<br>When envía la solicitud<br>Then el sistema retorna el consumo total y promedio. | US02 |
+| TS03 | Endpoint GET consumo por electrodoméstico     | Como developer, quiero implementar un endpoint que devuelva el consumo agregado por electrodoméstico. | **Escenario:** Distribución por dispositivos<br>Given que el usuario tiene dispositivos registrados<br>When consulta su distribución de consumo<br>Then el sistema muestra el consumo agrupado por aparato. | US03 |
+| TS04 | Job automático de resumen diario              | Como developer, quiero programar un job que genere y envíe por correo el resumen de consumo al final del día. | **Escenario:** Envío de correo automático<br>Given que el usuario activó las notificaciones<br>When finaliza el día<br>Then recibe un correo con su resumen de consumo. | US04 |
+| TS05 | Endpoint GET comparación mensual              | Como developer, quiero implementar un endpoint que compare el consumo entre dos meses distintos. | **Escenario:** Comparación exitosa<br>Given que existen datos de ambos meses<br>When el usuario solicita la comparación<br>Then el sistema muestra los consumos y la diferencia porcentual. | US05 |
+| TS06 | Endpoint GET pronóstico de consumo            | Como developer, quiero implementar un endpoint que genere una predicción de consumo futuro usando datos históricos. | **Escenario:** Predicción generada<br>Given que existen datos históricos<br>When el usuario consulta proyección<br>Then se devuelve estimación en kWh y soles. | US06 |
+| TS07 | Endpoint GET promedio de consumo              | Como developer, quiero implementar un endpoint que calcule el consumo promedio. | **Escenario:** Promedio calculado<br>Given que existen datos<br>When el usuario solicita su promedio<br>Then el sistema devuelve el valor calculado. | US07 |
+| TS08 | Sistema de alertas por consumo inusual        | Como developer, quiero implementar un servicio que detecte consumos inusuales y genere alertas. | **Escenario:** Detección de anomalía<br>Given que un dispositivo supera su promedio<br>When ocurre el evento<br>Then el sistema genera una alerta al usuario. | US08 |
+| TS09 | Endpoint POST límite de consumo mensual       | Como developer, quiero implementar un endpoint que permita fijar y almacenar un límite de consumo mensual. | **Escenario:** Registro de límite<br>Given que el usuario define un valor<br>When guarda el límite<br>Then queda almacenado y disponible para validación. | US09 |
+| TS10 | Servicio de notificaciones por límite         | Como developer, quiero implementar un proceso que monitoree el límite mensual y envíe notificaciones. | **Escenario:** Aviso de consumo<br>Given que el usuario fijó un límite<br>When se alcanza el 80% o se supera<br>Then el sistema envía alerta. | US09 |
+| TS11 | Sistema de detección de luces encendidas      | Como developer, quiero programar un servicio que detecte luces encendidas demasiado tiempo. | **Escenario:** Detección de luces<br>Given que un foco permanece encendido X horas<br>When el sistema lo detecta<br>Then envía notificación al usuario. | US10 |
+| TS12 | Configuración de alertas personalizables      | Como developer, quiero habilitar que el usuario configure qué alertas recibir. | **Escenario:** Personalización<br>Given que el usuario accede a configuración<br>When selecciona/deselecciona alertas<br>Then el sistema guarda las preferencias. | US11 |
+| TS13 | Ícono de notificaciones en panel              | Como developer, quiero implementar un ícono en el panel que muestre alertas pendientes. | **Escenario:** Visualización<br>Given que el usuario recibe alertas<br>When entra al panel<br>Then el ícono refleja las notificaciones. | US11 |
+| TS14 | Motor de recomendaciones personalizadas       | Como developer, quiero implementar un motor que genere consejos adaptados al usuario. | **Escenario:** Generación de consejos<br>Given que existen patrones de consumo<br>When el sistema los analiza<br>Then genera recomendaciones personalizadas. | US12 |
+| TS15 | Listado estático de buenas prácticas          | Como developer, quiero implementar un listado predefinido de prácticas de ahorro energético. | **Escenario:** Visualización<br>Given que el usuario accede a consejos<br>When selecciona “Prácticas generales”<br>Then se muestra el listado. | US13 |
+| TS16 | Endpoint GET horarios de menor costo          | Como developer, quiero crear un endpoint que devuelva los horarios de menor tarifa. | **Escenario:** Consulta exitosa<br>Given que existen tarifas<br>When el usuario consulta<br>Then recibe horarios con menor costo. | US14 |
+| TS17 | Cálculo de estimación de ahorro               | Como developer, quiero implementar un algoritmo que estime el ahorro potencial al aplicar un consejo. | **Escenario:** Cálculo correcto<br>Given que el usuario selecciona un consejo<br>When consulta ahorro<br>Then el sistema muestra el valor estimado. | US15 |
+| TS18 | Dashboard integral de métricas                | Como developer, quiero construir un panel que muestre métricas principales en una sola vista. | **Escenario:** Visualización<br>Given que el usuario accede al panel<br>When carga la vista<br>Then aparecen kWh, costo y ahorro. | US16 |
+| TS19 | Gráfica de consumo diario                     | Como developer, quiero implementar una gráfica de líneas que muestre el consumo por horas en un día. | **Escenario:** Visualización<br>Given que existen datos<br>When el usuario accede al gráfico diario<br>Then ve picos de consumo. | US17 |
+| TS20 | Acceso a reportes desde menú lateral          | Como developer, quiero añadir la opción de “Reportes” en el menú lateral. | **Escenario:** Navegación<br>Given que el usuario abre menú<br>When selecciona “Reportes”<br>Then se redirige a reportes. | US18 |
+| TS21 | CRUD de perfil personal                       | Como developer, quiero implementar el CRUD de datos personales del usuario. | **Escenario:** Guardado de datos<br>Given que el usuario ingresa información<br>When guarda<br>Then queda registrada en BD. | US19 |
+| TS22 | Configuración de idioma y notificaciones      | Como developer, quiero implementar endpoints para configurar idioma y notificaciones. | **Escenario:** Configuración<br>Given que el usuario ajusta valores<br>When guarda<br>Then el sistema aplica cambios. | US20 |
+| TS23 | CRUD de electrodomésticos                     | Como developer, quiero implementar un CRUD para registrar y eliminar electrodomésticos. | **Escenario:** Alta y baja<br>Given que el usuario gestiona dispositivos<br>When agrega o elimina<br>Then el sistema actualiza la lista. | US21 |
+| TS24 | Personalización de panel                      | Como developer, quiero implementar lógica para guardar preferencias de métricas en el panel. | **Escenario:** Personalización<br>Given que el usuario ordena métricas<br>When guarda configuración<br>Then el sistema muestra panel adaptado. | US22 |
+| TS25 | Integración de recibos digitales              | Como developer, quiero implementar un servicio que procese recibos de electricidad subidos por el usuario. | **Escenario:** Carga exitosa<br>Given que el usuario sube un PDF<br>When el sistema lo procesa<br>Then se almacena y se compara con consumos. | US23 |
+| TS26 | Integración con dispositivos IoT              | Como developer, quiero implementar compatibilidad con dispositivos inteligentes. | **Escenario:** Vinculación IoT<br>Given que el usuario tiene un IoT<br>When lo vincula<br>Then el sistema recibe y muestra sus datos. | US24 |
+| TS27 | Exportación de reportes en PDF                | Como developer, quiero generar reportes en formato PDF. | **Escenario:** Generación PDF<br>Given que el usuario solicita exportar<br>When selecciona PDF<br>Then se descarga archivo con estadísticas. | US25 |
+| TS28 | Exportación de reportes en Excel              | Como developer, quiero generar reportes en formato Excel. | **Escenario:** Generación Excel<br>Given que el usuario solicita exportar<br>When selecciona Excel<br>Then se descarga archivo .xlsx. | US25 |
+| TS29 | Página de bienvenida (landing)                | Como developer, quiero implementar la landing con descripción clara del producto. | **Escenario:** Carga landing<br>Given que un visitante entra<br>When se carga página<br>Then se muestra mensaje introductorio. | US26 |
+| TS30 | Footer con información                        | Como developer, quiero implementar un footer con enlaces y datos de contacto. | **Escenario:** Visualización<br>Given que un visitante navega<br>When llega al footer<br>Then observa enlaces útiles. | US27 |
+| TS31 | Encabezado con navegación                     | Como developer, quiero implementar un encabezado con menú de navegación. | **Escenario:** Navegación<br>Given que el visitante interactúa<br>When selecciona un enlace<br>Then se redirige a la sección correspondiente. | US28 |
+| TS32 | Formulario de contacto                        | Como developer, quiero implementar un formulario de contacto funcional. | **Escenario:** Envío de mensaje<br>Given que el visitante completa el formulario<br>When lo envía<br>Then se recibe en soporte. | US29 |
+| TS33 | Listado de planes de suscripción              | Como developer, quiero implementar un listado dinámico de planes en la landing. | **Escenario:** Visualización<br>Given que el visitante abre sección de precios<br>When carga<br>Then ve los planes disponibles. | US30 |
+| TS34 | Listado de características de la app          | Como developer, quiero implementar la sección de características de la app en la landing. | **Escenario:** Visualización<br>Given que el visitante abre landing<br>When navega a “Características”<br>Then observa el listado de funcionalidades. | US31 |
+| TS35 | Video de presentación del equipo              | Como developer, quiero integrar un video en la landing sobre el equipo. | **Escenario:** Visualización<br>Given que el visitante entra a “Equipo”<br>When carga<br>Then se reproduce video de presentación. | US32 |
+| TS36 | Video tutorial introductorio                  | Como developer, quiero integrar un video tutorial en la landing. | **Escenario:** Acceso al tutorial<br>Given que el visitante selecciona “Tutorial”<br>When carga<br>Then se reproduce el video explicativo. | US33 |
+| TS37 | Multilenguaje en landing                      | Como developer, quiero implementar cambio de idioma entre español e inglés. | **Escenario:** Cambio idioma<br>Given que el visitante selecciona “EN/ES”<br>When cambia<br>Then la landing se traduce automáticamente. | US34 |
+| TS38 | Módulo de autenticación                       | Como developer, quiero implementar el login, registro, recuperación y logout de usuarios. | **Escenario 1:** Login válido<br>Given credenciales correctas<br>When inicia sesión<br>Then accede.<br>**Escenario 2:** Registro exitoso<br>Given datos correctos<br>When se registra<br>Then se crea cuenta.<br>**Escenario 3:** Recuperación de contraseña<br>Given correo válido<br>When solicita recuperación<br>Then recibe enlace.<br>**Escenario 4:** Logout<br>Given sesión activa<br>When selecciona “Cerrar sesión”<br>Then el sistema lo desconecta. | US35, US36, US37, US38 |
+
 
 ## **3.3. Impact Mapping**
 
+El Impact Mapping es una técnica de planificación estratégica que conecta los objetivos del negocio con los entregables del producto. Ayuda a visualizar cómo las funcionalidades contribuyen a alcanzar los resultados esperados, identificando actores, impactos deseados y soluciones clave.
+
 <p align="center">
-  <img src="images/ImpactMap.png" alt="PB" width="1000">
+  <img src="images/Impactmap_Energixmanager.png" alt="PB" width="1000">
 </p>
 
 ## **3.4. Product Backlog**
+
+El Product Backlog es una lista priorizada de funcionalidades, mejoras y requisitos técnicos que guiarán la evolución del producto. Su propósito es organizar el trabajo en función del valor que aporta al usuario y al negocio, sirviendo como una hoja de ruta flexible y adaptable durante el desarrollo.
 
 Realizamos el product Backlog de Energix Manager en la plataforma de Trello:
 
