@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energix</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div id="loader">
+    <div id="loader" hidden>
         <div class="spinner"></div>
     </div>
     <header>
@@ -29,9 +30,9 @@
 
             <div class="nav-actions">
                 <div class="auth-buttons">
-                    <a href="#" class="login">Iniciar Sesión</a>
-                    <a href="#" class="sing-up">Registrarse</a>
-                    
+                    <a href="profile.html" class="login">Iniciar Sesión</a>
+                    <a href="profile.html" class="sign-up">Registrarse</a>
+
                 </div>
 
                 <div class="language-selector">
@@ -54,6 +55,19 @@
                 <div class="hero-image">
                     <img src="assets/hero-image.png" alt="Ilustración de laptop">
                 </div>
+                <div class="liders" id="liders">
+                    <h2>Con la confianza de líderes en energía</h2>
+                    <div class="liders-carousel">
+                        <div class="liders-track">
+                            <div class="liders-card"><img src="assets/lider 1.png" alt="lider 1"></div>
+                            <div class="liders-card"><img src="assets/lider 2.png" alt="lider 2"></div>
+                            <div class="liders-card"><img src="assets/lider 3.png" alt="lider 3"></div>
+                            <div class="liders-card"><img src="assets/lider 4.png" alt="lider 4"></div>
+                            <div class="liders-card"><img src="assets/lider 5.png" alt="lider 5"></div>
+                            <div class="liders-card"><img src="assets/lider 6.png" alt="lider 6"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="features-row">
                     <div class="features-below">
                         <h2>Deja que la tecnología<br>trabaje por ti</h2>
@@ -67,81 +81,116 @@
                 </div>
             </div>
         </section>
-        <section class="liders" id="liders">
-            <h2>Con la confianza de líderes en energía</h2>
-            <div class="liders-carousel">
-                <div class="liders-track">
-                    <div class="liders-card"><img src="assets/lider 1.png" alt="lider 1"></div>
-                    <div class="liders-card"><img src="assets/lider 2.png" alt="lider 2"></div>
-                    <div class="liders-card"><img src="assets/lider 3.png" alt="lider 3"></div>
-                    <div class="liders-card"><img src="assets/lider 4.png" alt="lider 4"></div>
-                    <div class="liders-card"><img src="assets/lider 5.png" alt="lider 5"></div>
-                    <div class="liders-card"><img src="assets/lider 6.png" alt="lider 6"></div>
-                </div>
+
+        <section class="videos" id="videos">
+            <h2>Conoce más</h2>
+            <div class="about-team">
+                <h2>Sobre el equipo</h2>
+                <video width="640" height="360" controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                <p>Conozca al equipo detrás de Energix, comprometido con un futuro energético más sostenible.</p>
+
+            </div>
+
+            <div class="about-product">
+                <h2>Sobre el producto</h2>
+                <video width="640" height="360" controls>
+                    <source src="video2.mp4" type="video/mp4">
+                </video>
+                <p>Descubre cómo Energix puede transformar la forma en que gestionas su consumo energético.</p>
+
             </div>
         </section>
-
 
         <section class="services" id="services">
+            <h2>Tu consumo <em>bajo control</em>, siempre</h2>
 
-            <h2>Tu consumo bajo control, siempre</h2>
-            <div>
+            <div class="services-slider" aria-label="Carrusel de servicios">
+                <button class="nav prev" aria-label="Anterior">‹</button>
 
-                <img src="assets/service 1.png" alt="service 1">
-                <p>Monitoreo en tiempo real</p>
+                <div class="track" role="list">
+                    <div class="card" role="listitem">
+                        <img src="assets/service 1.png" alt="Monitoreo en tiempo real">
+                        <span class="label">Monitoreo en tiempo real</span>
+                    </div>
+
+                    <div class="card" role="listitem">
+                        <img src="assets/service 2.png" alt="Alertas de Consumo Inusual">
+                        <span class="label">Alertas de consumo inusual</span>
+                    </div>
+
+                    <div class="card" role="listitem">
+                        <img src="assets/service 3.png" alt="Reportes semanales">
+                        <span class="label">Reportes semanales</span>
+                    </div>
+
+                    <div class="card" role="listitem">
+                        <img src="assets/service 4.png" alt="Consejos de ahorro personalizados">
+                        <span class="label">Consejos de ahorro personalizados</span>
+                    </div>
+                </div>
+
+                <button class="nav next" aria-label="Siguiente">›</button>
+
+                <div class="dots" aria-hidden="true"></div>
+            </div>
+        </section>
+
+
+        <section class="subscription" id="subscription">
+            <div class="basic-plan">
+                <h2>Plan Básico</h2>
+                <h3>(Gratuito)</h3>
+                <h1>$5</h1>
+                <ul>
+
+                    <li>Monitoreo de consumo en tiempo real</li>
+                    <li>Historial de consumo (últimos 7 días)</li>
+                    <li>Alertas básicas (ej:límite mensual)</li>
+                    <li>Acceso desde un solo dispositivo</li>
+
+                </ul>
+                <button class="cta-button">Seleccionar</button>
             </div>
 
-            <div>
-                <img src="assets/service 2.png" alt="service 2">
-                <p>Alertas de Consumo Inusual</p>
+            <div class="student-plan">
+                <h2>Plan Estudiantíl</h2>
+                <h3>(Económico)</h3>
+                <h1>$20</h1>
+                <ul>
+
+                    <li>Todo lo del Plan Básico</li>
+                    <li>Historial ampliado (últimos 3 meses)</li>
+                    <li>Recomendaciones personalizadas para ahorrar</li>
+                    <li>Alertas inteligentes (consumo inusual, luces encendidad)</li>
+                    <li>Integración con hasta 2 dispositivos inteligentes</li>
+                    <li>Soporte básico via chat o correo</li>
+
+                </ul>
+                <button class="cta-button">Seleccionar</button>
             </div>
 
-            <div>
-                <img src="assets/service 3.png" alt="service 3">
-                <p>Reportes semanales</p>
-            </div>
+            <div class="family-plan">
+                <h2>Plan Familiar</h2>
+                <h3>(Premium)</h3>
+                <h1>$50</h1>
+                <ul>
 
-             <div>
-                <img src="assets/service 4.png" alt="service 3">
-                <p>Consejos de ahorros personalizados</p>
+                    <li>Todo lo del Plan Estudiantil</li>
+                    <li>Historial completo sin límites</li>
+                    <li>Pronóstico de consumo y ahorro estimado</li>
+                    <li>Exportación de reportes en PDF y Excel</li>
+                    <li>Integración con facturas eléctricas oficiales</li>
+                    <li>Integración con varios dispositivos IoT (límitados)</li>
+                    <li>Panel estadístico familiar (varios perfiles dentro de la misma cuenta)</li>
+                    <li>Soporte prioritario (correo y chat en tiempo real) </li>
+
+                </ul>
+                <button class="cta-button">Seleccionar</button>
             </div>
 
         </section>
-
-        <section class="testimoniasl" id="testimonials">
-            <h2>Experiencias que inspiran</h2>
-            <div class="testimonial-card">
-                <img src="assets/stars.png" alt="stars" class="testimonial-stars">
-                <p>Desde que uso Energix, reduje mi recibo de<br>luz un casi 20%. Ahora entiendo mejor<br>qué aparatos
-                    consumen más y cómo<br>optimizar mi consumo.</p>
-                <img src="assets/avatar1.png" alt="usuario 1" class="testimonial-avatar">
-
-                <h4 class="testimonial-name">De María López</h4>
-                <span>Lima</span>
-            </div>
-            <div class="testimonial-card">
-                <img src="assets/stars.png" alt="stars" class="testimonial-stars">
-                <p>Las alertas en tiempo real me ayudaron a<br>detectar un electrodoméstico que estaba<br>gastando de
-                    más. Es como tener un asesor<br>de energía en casa.</p>
-                <img src="assets/avatar2.png" alt="usuario 2" class="testimonial-avatar">
-
-                <h4 class="testimonial-name">De Jorge Ramírez</h4>
-                <span>Arequipa</span>
-            </div>
-            <div class="testimonial-card">
-                <img src="assets/stars.png" alt="stars" class="testimonial-stars">
-
-                <p>Lo mejor es la simplicidad. No necesito ser<br>experta en energía para ahorrar. Energix me<br>da la
-                    información clara y fácil de enteder .</p>
-                <img src="assets/avatar3.png" alt="usuario 3" class="testimonial-avatar">
-
-                <h4 class="testimonial-name">De Carolina Fernández</h4>
-                <span>Trujillo</span>
-            </div>
-
-
-        </section>
-
         <section class="contact" id="contact">
             <h1>Contáctanos</h1>
             <div class="contact-container">
@@ -202,10 +251,10 @@
 
     </footer>
 
-    <div class="modal" id="loginModal">
-        <div class="modal-content">
-            <i class="fa-solid fa-xmark close-modal"></i>
-            <h2>Iniciar Sesión</h2>
+    <div class="modal" id="loginModal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="login-title">
+            <i class="fa-solid fa-xmark close-modal" aria-label="Cerrar"></i>
+            <h2 id="login-title">Iniciar Sesión</h2>
             <form class="auth-form">
                 <input type="email" placeholder="Correo electrónico" required>
                 <input type="password" placeholder="Contraseña" required>
@@ -215,10 +264,10 @@
         </div>
     </div>
 
-    <div class="modal" id="registerModal">
-        <div class="modal-content">
-            <i class="fa-solid fa-xmark close-modal"></i>
-            <h2>Registrarse</h2>
+    <div class="modal" id="registerModal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="register-title">
+            <i class="fa-solid fa-xmark close-modal" aria-label="Cerrar"></i>
+            <h2 id="signup-title">Registrarse</h2>
             <form class="auth-form">
                 <input type="text" placeholder="Nombre completo" required>
                 <input type="email" placeholder="Correo electrónico" required>
@@ -229,6 +278,7 @@
             <p class="auth-redirect">¿Ya tienes una cuenta? <a href="#" class="open-login">Inicia sesión aquí</a></p>
         </div>
     </div>
+
 
 
 
