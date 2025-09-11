@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energix · Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <!-- Loader opcional -->
+  <div id="loader" hidden>
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">Energix</div>
+    <nav class="sidenav">
+      <a class="active" href="#">
+        <img src="" alt="" aria-hidden="true">
+        <span>Dashboard</span>
+      </a>
+      <a href="#">
+        <img src="" alt="" aria-hidden="true">
+        <span>Consumo</span>
+      </a>
+      <a href="#">
+        <img src="" alt="" aria-hidden="true">
+        <span>Alertas</span>
+      </a>
+      <a href="#">
+        <img src="" alt="" aria-hidden="true">
+        <span>Reportes</span>
+      </a>
+      <a href="#">
+        <img src="" alt="" aria-hidden="true">
+        <span>Configuración</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="greeting">
+        <h1>Bienvenido de vuelta, <strong>Jorge</strong>.</h1>
+      </div>
+      <div class="top-meta">
+        <div class="datetime">
+          <div>Jueves 25 - Set</div>
+          <div>11:00 am</div>
+        </div>
+        <button class="icon-btn" aria-label="Notificaciones">
+          <img src="" alt="" aria-hidden="true">
+        </button>
+        <div class="user">
+          <img class="avatar" src="" alt="Foto de Jorge Ramírez">
+          <div class="user-meta">
+            <div class="name">Jorge Ramírez</div>
+            <div class="plan">Plan Estudiantil</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Overview -->
+      <section aria-labelledby="ov-title">
+        <h2 id="ov-title" class="section-title">Overview</h2>
+        <div class="kpi-group">
+          <article class="kpi">
+            <h3 class="kpi-title">Consumo actual</h3>
+            <div class="kpi-value">2.3 kWh</div>
+            <div class="kpi-sub">+10% ahorrado vs ayer</div>
+          </article>
+
+          <article class="kpi">
+            <h3 class="kpi-title">Consumo de hoy</h3>
+            <div class="kpi-value">3.2 kWh</div>
+            <div class="kpi-sub">Hasta ahora / 8.5 kWh proyectado</div>
+          </article>
+
+          <article class="kpi">
+            <h3 class="kpi-title">Consumo mensual</h3>
+            <div class="kpi-value">200 kWh</div>
+            <div class="kpi-sub">-80% de una meta de 250 kWh</div>
+          </article>
+
+          <article class="kpi">
+            <h3 class="kpi-title">Costo estimado</h3>
+            <div class="kpi-value">S/45.20</div>
+            <div class="kpi-sub">vs S/48 el mes pasado</div>
+          </article>
+
+          <article class="kpi">
+            <h3 class="kpi-title">Promedio diario</h3>
+            <div class="kpi-value">7.5 kWh</div>
+            <div class="kpi-sub">Historial últimos 3 meses</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Charts -->
+      <section class="grid-12">
+        <figure class="card chart-box col-span-8">
+          <h3>Consumo de energía hoy (por hora)</h3>
+          <canvas id="consumoPorHora"></canvas>
+        </figure>
+
+        <figure class="card chart-box col-span-4">
+          <h3>Consumo por dispositivo</h3>
+          <canvas id="consumoPorDispositivo"></canvas>
+        </figure>
+
+        <figure class="card chart-box col-span-12">
+          <h3>Consumo este mes (diario)</h3>
+          <canvas id="consumoPorMes"></canvas>
+        </figure>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>
