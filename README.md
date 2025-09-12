@@ -417,8 +417,6 @@ Este segmento está muy influenciado por la información en línea y las recomen
 ### ***2.1.1. Análisis competitivo***
 ### ***2.1.2. Estrategias y tácticas frente a competidores***
 
-## Estrategia de Diferenciación
-
 - **Plan Freemium accesible**: Ofreceremos funciones esenciales de monitoreo y alertas personalizadas, mucho más accesibles que las soluciones de hardware costoso como **Sense Home Energy Monitor** o **Wibeee Box**.
 
 - **Contenido educativo gratuito**: Publicaremos guías en PDF, videos y webinars sobre eficiencia energética y ahorro en el hogar, posicionando a **Energix Manager** como la opción más simple y práctica frente a competidores más complejos.
